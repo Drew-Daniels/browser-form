@@ -1,1 +1,39 @@
 @use 'reset';
+@use 'fonts';
+
+* > {
+  box-sizing: border-box;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-section {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 4em;
+  padding: 1em 0;
+}
+.github-icon {
+  height: 2em;
+}
