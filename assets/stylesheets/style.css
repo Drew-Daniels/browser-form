@@ -80,7 +80,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   background-color: gray;
-  width: 20em;
+  width: 25em;
   padding: 1em 0;
   border-radius: 1em;
 }
@@ -111,12 +111,12 @@ html, body {
   height: 2em;
 }
 
-input:invalid {
-  border: 2px dashed red;
+input:focus:required:invalid {
+  border: 2px solid #d63e3e;
 }
 
-input:valid {
-  border: 2px solid black;
+input:required:valid {
+  border: 2px solid #55b852;
 }
 
 .pair {

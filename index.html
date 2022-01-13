@@ -9,12 +9,12 @@
   </head>
   <body class="content-container">
     <div class="content">
-      <form class="form" novalidate onsubmit="">
-        <!-- Email -->
+      <form class="form" novalidate onsubmit="return false">
         <div class="form-header">
           <span>Validation Form</span>
         </div>
         <div class="form-section">
+          <!-- Email -->
           <label for="email">Email:</label>
           <div class="pair">
             <input id="user-email" type="email" name="email" required>
@@ -35,7 +35,7 @@
         <div class="form-section">
           <label for="zip">ZIP Code:</label>
           <div class="pair">
-            <input id="user-zip" type="text" name="zip" required>
+            <input id="user-zip" type="text" name="zip" pattern="[0-9]{5}" min="1" max="5" required>
             <img src="assets/images/icons/error-icon.svg" class="val-img" alt="Exclamation Point">
             <img src="assets/images/icons/success-icon.svg" class="val-img" alt="Checkmark with Surrounding Circle">
           </div>
@@ -44,7 +44,7 @@
         <div class="form-section">
           <label for="pwd">Please Enter a Password:</label>
           <div class="pair">
-            <input id="user-pwd" type="password" name="pwd" required>
+            <input id="user-pwd" type="password" name="pwd" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required>
             <img src="assets/images/icons/error-icon.svg" class="val-img" alt="Exclamation Point">
             <img src="assets/images/icons/success-icon.svg" class="val-img" alt="Checkmark with Surrounding Circle">
           </div>
