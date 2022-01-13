@@ -26,7 +26,7 @@
         <div class="form-section">
           <label for="country">Country:</label>
           <div class="pair">
-            <input id="user-country" type="text" name="country" required>
+            <input id="user-country" type="text" name="country" pattern="[a-zA-Z.]{2,56}" required>
             <img src="assets/images/icons/error-icon.svg" class="val-img" alt="Exclamation Point">
             <img src="assets/images/icons/success-icon.svg" class="val-img" alt="Checkmark with Surrounding Circle">
           </div>
@@ -35,7 +35,7 @@
         <div class="form-section">
           <label for="zip">ZIP Code:</label>
           <div class="pair">
-            <input id="user-zip" type="text" name="zip" pattern="[0-9]{5}" min="1" max="5" required>
+            <input id="user-zip" type="text" name="zip" pattern="[0-9]{1,5}" min="1" max="5" required>
             <img src="assets/images/icons/error-icon.svg" class="val-img" alt="Exclamation Point">
             <img src="assets/images/icons/success-icon.svg" class="val-img" alt="Checkmark with Surrounding Circle">
           </div>
@@ -53,7 +53,7 @@
         <div class="form-section">
           <label for="pwd-cnf">Confirm Your Password:</label>
           <div class="pair">
-            <input id="user-pwd-cnf" type="password" name="pwd-cnf" required>
+            <input id="user-pwd-cnf" type="password" name="pwd-cnf" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required>
             <img src="assets/images/icons/error-icon.svg" class="val-img" alt="Exclamation Point">
             <img src="assets/images/icons/success-icon.svg" class="val-img" alt="Checkmark with Surrounding Circle">
           </div>
