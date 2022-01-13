@@ -5,35 +5,37 @@
     <title>Browser Form</title>
     <link rel="shortcut icon" href="assets/images/icons/login-icon.svg">
     <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <script src="assets/js/index.js" defer async></script>
   </head>
   <body class="content-container">
     <div class="content">
-      <form action="" class="form">
+      <form class="form" novalidate onsubmit="">
         <!-- Email -->
         <div class="form-section">
-          <label for="user-email">Email:</label>
-          <input id="user-email" type="email">
+          <label for="email">Email:</label>
+          <input id="user-email" type="email" name="email" required>
         </div>
         <!-- Country -->
         <div class="form-section">
-          <label for="">Country:</label>
-          <input id="user-country" type="text">
+          <label for="country">Country:</label>
+          <input id="user-country" type="text" name="country" required>
         </div>
         <!-- ZIP Code -->
         <div class="form-section">
-          <label for="user-zip">ZIP Code:</label>
-          <input id="user-zip" type="text">
+          <label for="zip">ZIP Code:</label>
+          <input id="user-zip" type="text" name="zip" required>
         </div>
         <!-- Password -->
         <div class="form-section">
-          <label for="user-pwd">Please Enter a Password:</label>
-          <input id="user-pwd" type="password">
+          <label for="pwd">Please Enter a Password:</label>
+          <input id="user-pwd" type="password" name="pwd" required>
         </div>
         <!-- Password Confirmation -->
         <div class="form-section">
-          <label for="user-pwd-cnf">Confirm Your Password:</label>
-          <input id="user-pwd-cnf" type="password">
+          <label for="pwd-cnf">Confirm Your Password:</label>
+          <input id="user-pwd-cnf" type="password" name="pwd-cnf" required>
         </div>
+        <button>Submit</button>
       </form>
     </div>
     <footer class="footer">
