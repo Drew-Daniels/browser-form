@@ -119,4 +119,19 @@ input:valid {
   border: 2px solid black;
 }
 
+.pair {
+  display: flex;
+  align-items: center;
+}
+
+.val-img {
+  width: 0em;
+  margin-left: 0.25em;
+  transition: width 1ms ease-in-out;
+}
+
+.val-img.visible {
+  width: 1em;
+}
+
 /*# sourceMappingURL=style.css.map */
